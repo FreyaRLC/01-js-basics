@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Hvad er længden?</p>
+    <input type="text" id="bredde" />
+    <p>Hvad er bredden?</p>
+    <input type="text" id="længde" />
+    <button>Klik og beregn areal, console.</button>
+    <script>
+      let bredde = document.querySelector("#bredde").value;
+      let længde = document.querySelector("#længde").value;
+      //   let areal = bredde * længde;
+
+      document.querySelector("button").addEventListener("click", buttonClicked);
+
+      function buttonClicked() {
+        console.log(`Arealet er ${areal(længde, bredde)}`);
+      }
+
+      function areal(l,b) {
+        return l * b;
+      }
+    </script>
+  </body>
+</html>
